@@ -1,0 +1,42 @@
+/* Minimal professional styles for the portfolio */
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#4f46e5;
+  --text:#e6eef8;
+  --glass: rgba(255,255,255,0.02);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071029 0%, #071833 100%); color:var(--text);}
+.wrap{max-width:1100px;margin:0 auto;padding:28px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand a{color:var(--text);font-weight:700;font-size:1.1rem;text-decoration:none}
+.brand .tag{margin:0;color:var(--muted);font-size:0.85rem}
+.main-nav{position:relative}
+.nav-toggle{display:none;background:transparent;border:0;color:var(--text);font-size:1.2rem}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:16px;align-items:center}
+.nav-list a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:6px}
+.nav-list a:hover{color:var(--text);background:var(--glass)}
+.nav-list .cta{background:linear-gradient(90deg,var(--accent),#7c3aed);color:white;padding:8px 12px;border-radius:8px}
+.hero{display:flex;gap:40px;align-items:center;padding:40px 0}
+.hero-content{flex:1}
+.hero h1{font-size:2rem;margin:0 0 12px}
+.lead{color:var(--muted);margin:0 0 18px}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:transparent;color:var(--text);border:1px solid rgba(255,255,255,0.06);text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none}
+.hero-image{width:220px;height:140px;border-radius:12px;background:linear-gradient(135deg,#0b1220,#0f1724);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+.section{padding:26px 0;border-top:1px solid rgba(255,255,255,0.02)}
+.section h2{margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+.card h3{margin:0 0 8px}
+.muted{color:var(--muted)}
+.more{margin-top:12px}
+.site-footer{padding:20px 0;color:var(--muted)}
+@media (max-width:720px){
+  .header-inner{flex-direction:row;align-items:center}
+  .nav-toggle{display:inline-block}
+  .nav-list{position:absolute;right:0;top:48px;background:linear-gradient(180deg,rgba(9,10,14,0.95),rgba(9,10,14,0.98));padding:12px;border-radius:8px;flex-direction:column;display:none}
+  .nav-list.open{display:flex}
+}
