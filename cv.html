@@ -3,21 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CS50 Project — Hamza Siddiqui</title>
+    <title>CV — Hamza A. Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
     <div class="site">
-      <aside class="sidebar">
+      <aside class="sidebar" role="complementary">
         <div class="profile">
           <h1>Hamza A. Siddiqui</h1>
           <p class="tag">Data Scientist • Machine Learning • Applied AI</p>
         </div>
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/projects/">Projects</a></li>
+            <li><a href="/repositories/">Repositories</a></li>
             <li><a href="/about.html">About</a></li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="mailto:hamzaahmedsiddiqui10@gmail.com">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a></li>
           </ul>
         </nav>
         <div style="margin-top:14px">
@@ -26,19 +30,25 @@
       </aside>
 
       <main class="content">
-        <h1>CS50 Project</h1>
-        <p class="muted">Repository: <a href="https://github.com/hamzasiddiqui10/CS50-project" target="_blank">hamzasiddiqui10/CS50-project</a></p>
+        <h1>Curriculum Vitae</h1>
+        <p class="muted">Placeholder page — add your CV content or a downloadable file here.</p>
 
-        <section style="margin-top:12px">
-          <h2>About</h2>
-          <p>This page links to the CS50 course project repo. Add notes, screenshots or demo files here if you want a lightweight hosted documentation page.</p>
+        <section class="card" style="margin-top:18px">
+          <h2>Summary</h2>
+          <p class="muted">(Add a short professional summary and highlights.)</p>
+        </section>
+
+        <section class="card" style="margin-top:12px">
+          <h2>Experience</h2>
+          <p class="muted">(List roles, companies and dates here.)</p>
         </section>
 
         <footer class="site-footer">
-          <small class="muted">© <span id="year-sidebar"></span> Hamza Siddiqui</small>
+          <small class="muted">© <span id="year-sidebar"></span> Hamza A. Siddiqui</small>
         </footer>
       </main>
     </div>
+
     <script src="/assets/js/theme-toggle.js"></script>
     <script>document.getElementById('year-sidebar').textContent = new Date().getFullYear();</script>
   </body>

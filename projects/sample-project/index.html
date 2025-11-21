@@ -7,26 +7,43 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <header class="wrap">
-      <a href="/projects/">← Back to projects</a>
-    </header>
+    <div class="site">
+      <aside class="sidebar">
+        <div class="profile">
+          <h1>Hamza A. Siddiqui</h1>
+          <p class="tag">Data Scientist • Machine Learning • Applied AI</p>
+        </div>
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/about.html">About</a></li>
+          </ul>
+        </nav>
+        <div style="margin-top:14px">
+          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+        </div>
+      </aside>
 
-    <main class="wrap">
-      <h1>Sample Project</h1>
-      <p class="muted">This is an example project folder. Put notebooks, datasets, model artifacts, and documentation here.</p>
+      <main class="content">
+        <h1>Sample Project</h1>
+        <p class="muted">This is an example project folder. Put notebooks, datasets, model artifacts, and documentation here.</p>
 
-      <section class="section">
-        <h2>Files</h2>
-        <ul>
-          <li><strong>README.md</strong> — Overview and how to run this project.</li>
-          <li><strong>notebooks/</strong> — Analysis notebooks.</li>
-          <li><strong>data/</strong> — Small sample data (avoid committing large datasets directly).</li>
-        </ul>
-      </section>
-    </main>
+        <section style="margin-top:12px">
+          <h2>Files</h2>
+          <ul>
+            <li><strong>README.md</strong> — Overview and how to run this project.</li>
+            <li><strong>notebooks/</strong> — Analysis notebooks.</li>
+            <li><strong>data/</strong> — Small example datasets.</li>
+          </ul>
+        </section>
 
-    <footer class="site-footer wrap">
-      <small class="muted">© <span id="year">2025</span> Hamza Siddiqui</small>
-    </footer>
+        <footer class="site-footer">
+          <small class="muted">© <span id="year-sidebar"></span> Hamza Siddiqui</small>
+        </footer>
+      </main>
+    </div>
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script>document.getElementById('year-sidebar').textContent = new Date().getFullYear();</script>
   </body>
 </html>

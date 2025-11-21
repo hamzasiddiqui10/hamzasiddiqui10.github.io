@@ -7,31 +7,63 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <header class="wrap">
-      <a href="/">← Back to home</a>
-    </header>
-
-    <main class="wrap">
-      <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
-        <div style="flex:1;min-width:260px">
-          <h1>About Me</h1>
-          <p>I graduated with a degree in Economics and was initially on an academic path — I enjoyed the field’s mathematical rigor. After graduating I moved into the Data Science industry and that’s where I met programming. I quickly picked up R and SQL and, through focused self-study (MOOCs, tutorials, and hands-on experiments), expanded my skills into machine learning and software practices.</p>
-
-          <p>Over time I’ve built practical experience designing ML solutions, constructing reproducible pipelines, and applying statistical thinking to real problems. My day-to-day toolkit includes Python, R and SQL, and I keep up with developments in machine learning so I can apply the right tools to deliver value.</p>
-
-          <p>I’m eager to keep learning and to grow deeper expertise in machine learning.</p>
-
-          <p class="muted">Contact: <a href="mailto:hamzaahmedsiddiqui10@gmail.com">hamzaahmedsiddiqui10@gmail.com</a></p>
+    <div class="site">
+      <aside class="sidebar" role="complementary">
+        <div class="profile">
+          <h1>Hamza A. Siddiqui</h1>
+          <p class="tag">Data Scientist • Machine Learning • Applied AI</p>
         </div>
-        <div style="width:220px;min-width:180px">
-          <!-- Photo placeholder: replace with an <img> or your avatar -->
-          <div style="width:220px;height:220px;border-radius:12px;background:linear-gradient(180deg,#0b1220,#0f1724);display:flex;align-items:center;justify-content:center;color:var(--muted)">Photo</div>
-        </div>
-      </div>
-    </main>
 
-    <footer class="site-footer wrap">
-      <small class="muted">© <span id="year">2025</span> Hamza A. Siddiqui</small>
-    </footer>
+        <nav class="sidebar-nav" aria-label="Sidebar navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/projects/">Projects</a></li>
+            <li><a href="/repositories/">Repositories</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/cv.html">CV</a></li>
+            <li><a href="mailto:hamzaahmedsiddiqui10@gmail.com">Contact</a></li>
+            <li><a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <div style="margin-top:14px">
+          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+        </div>
+
+      </aside>
+
+      <main class="content">
+        <section>
+          <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+            <div style="flex:1;min-width:260px">
+              <h1>About Me</h1>
+              <p>I graduated with a degree in Economics, originally planning for an academic path, drawn to the discipline’s analytical thinking and mathematical rigor. Shortly after, I entered the data science industry which  was an experience that introduced me to programming for the first time and completely reshaped my career trajectory.</p>
+
+                <p>What began as curiosity quickly turned into passion. Through long hours of self-learning, hands-on experimentation at work, Hackerrank challenges, online courses, and countless tutorials, I built a strong foundation in Python, R, and SQL. More importantly, I learned how to translate these skills into practical, business-driven machine learning solutions.</p>
+
+                <p>Over the past years, I’ve grown into a data scientist capable of tackling real-world problems from understanding the business need, to building data pipelines, to developing and evaluating predictive models. I stay actively engaged with the latest developments in machine learning because continuous learning is a core part of how I operate and what keeps me motivated.</p>
+
+                <p>I am now pursuing a Master’s in Data Science in Germany, deepening my expertise in machine learning, deep learning, and modern data science infrastructures. My emerging research interests include natural language processing, computer vision, multimodal deep learning architectures, and causal inference.</p>
+
+                <p>I’m driven by a simple goal: to keep learning, keep building, and contribute to machine learning systems that create real impact.</p>
+              <p class="muted">Contact: <a href="mailto:hamzaahmedsiddiqui10@gmail.com">hamzaahmedsiddiqui10@gmail.com</a></p>
+            </div>
+            <div style="width:220px;min-width:180px">
+              <!-- Photo placeholder: replace with an <img> or your avatar -->
+              <div style="width:220px;height:220px;border-radius:12px;background:linear-gradient(180deg,#f0f2f6,#e8edf5);display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px solid var(--border)">Photo</div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <small class="muted">© <span id="year-sidebar"></span> Hamza A. Siddiqui</small>
+        </footer>
+      </main>
+    </div>
+
+    <script src="/assets/js/theme-toggle.js"></script>
+    <script>
+      document.getElementById('year-sidebar').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
