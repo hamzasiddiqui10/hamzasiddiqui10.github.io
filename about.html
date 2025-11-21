@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>About — Hamza A. Siddiqui</title>
+  <title>About Me — Hamza A. Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <div class="site">
@@ -19,7 +20,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/projects/">Projects</a></li>
             <li><a href="/repositories/">Repositories</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="/about.html">About Me</a></li>
             <li><a href="/cv.html">CV</a></li>
             <li><a href="mailto:hamzaahmedsiddiqui10@gmail.com">Contact</a></li>
             <li><a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a></li>
@@ -27,7 +28,11 @@
         </nav>
 
         <div style="margin-top:14px">
-          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+          <label class="switch" title="Toggle dark mode">
+            <input type="checkbox" id="themeToggleBtn" aria-pressed="false" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="label">🌙</span>
+          </label>
         </div>
 
       </aside>
@@ -47,6 +52,12 @@
 
                 <p>I’m driven by a simple goal: to keep learning, keep building, and contribute to machine learning systems that create real impact.</p>
               <p class="muted">Contact: <a href="mailto:hamzaahmedsiddiqui10@gmail.com">hamzaahmedsiddiqui10@gmail.com</a></p>
+              <!-- social buttons -->
+              <div style="margin-top:20px;display:flex;gap:12px;align-items:center">
+                <a class="btn" href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank" aria-label="LinkedIn">🔗 LinkedIn</a>
+                <a class="btn" href="https://github.com/hamzasiddiqui10" target="_blank" aria-label="GitHub">🐙 GitHub</a>
+                <a class="btn" href="mailto:hamzaahmedsiddiqui10@gmail.com" aria-label="Email">✉️ Email</a>
+              </div>
             </div>
             <div style="width:220px;min-width:180px">
               <!-- Photo placeholder: replace with an <img> or your avatar -->

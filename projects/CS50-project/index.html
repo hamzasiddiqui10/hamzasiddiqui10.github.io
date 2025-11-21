@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>CS50 Project — Hamza Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <div class="site">
@@ -17,11 +18,15 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/projects/">Projects</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="/about.html">About Me</a></li>
           </ul>
         </nav>
         <div style="margin-top:14px">
-          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+          <label class="switch" title="Toggle dark mode">
+            <input type="checkbox" id="themeToggleBtn" aria-pressed="false" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="label">🌙</span>
+          </label>
         </div>
       </aside>
 
@@ -30,7 +35,7 @@
         <p class="muted">Repository: <a href="https://github.com/hamzasiddiqui10/CS50-project" target="_blank">hamzasiddiqui10/CS50-project</a></p>
 
         <section style="margin-top:12px">
-          <h2>About</h2>
+          <h2>About Me</h2>
           <p>This page links to the CS50 course project repo. Add notes, screenshots or demo files here if you want a lightweight hosted documentation page.</p>
         </section>
 

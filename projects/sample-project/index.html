@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Sample Project — Hamza Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   </head>
   <body>
     <div class="site">
@@ -17,11 +18,15 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/projects/">Projects</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="/about.html">About Me</a></li>
           </ul>
         </nav>
         <div style="margin-top:14px">
-          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+          <label class="switch" title="Toggle dark mode">
+            <input type="checkbox" id="themeToggleBtn" aria-pressed="false" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="label">🌙</span>
+          </label>
         </div>
       </aside>
 

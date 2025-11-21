@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hamza A. Siddiqui — Projects</title>
+  <title>Hamza A. Siddiqui — About Me</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
     <meta name="description" content="Hamza Siddiqui — Data Scientist, Machine Learning & Applied AI. Portfolio and projects." />
   </head>
 
   <body>
-    <div class="site">
+  <div class="site">
       <aside class="sidebar" role="complementary">
         <div class="profile">
           <h1>Hamza A. Siddiqui</h1>
@@ -21,7 +22,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/projects/">Projects</a></li>
             <li><a href="/repositories/">Repositories</a></li>
-            <li><a href="/about.html">About</a></li>
+            <li><a href="/about.html">About Me</a></li>
             <li><a href="/cv.html">CV</a></li>
             <li><a href="mailto:hamzaahmedsiddiqui10@gmail.com">Contact</a></li>
             <li><a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a></li>
@@ -29,7 +30,11 @@
         </nav>
 
         <div style="margin-top:14px">
-          <button id="themeToggleBtn" class="btn" aria-pressed="false">🌙 Dark</button>
+          <label class="switch" title="Toggle dark mode">
+            <input type="checkbox" id="themeToggleBtn" aria-pressed="false" />
+            <span class="slider" aria-hidden="true"></span>
+            <span class="label">Dark</span>
+          </label>
         </div>
 
         <div class="meta">
@@ -39,54 +44,32 @@
       </aside>
 
       <main class="content">
-        <section class="hero">
-          <div>
-            <h1>Hi, I’m Hamza — I build ML systems that deliver impact.</h1>
-            <p class="lead">I specialize in applied machine learning, data-driven product features, and reproducible pipelines.</p>
-            <p>
-              <a class="btn" href="/projects/">See Projects</a>
-              <a class="btn" href="/about.html">About</a>
-            </p>
+        <section>
+          <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap">
+            <div style="flex:1;min-width:260px">
+              <h1>About Me</h1>
+              <p>I graduated with a degree in Economics, originally planning for an academic path, drawn to the discipline’s analytical thinking and mathematical rigor. Shortly after, I entered the data science industry which introduced me to programming for the first time and reshaped my career trajectory.</p>
+
+              <p>What began as curiosity quickly turned into passion. Through focused self-study, hands-on work experiments, challenge problems, online courses, and tutorials, I developed a working fluency in R and SQL and later built strong skills in Python and machine learning workflows.</p>
+
+              <p>Over time I’ve built practical experience building ML solutions, reproducible pipelines, and applying statistical thinking to real problems. I stay current with developments in machine learning so I can apply useful tools that deliver value.</p>
+
+              <p>I’m eager to keep learning and grow deeper expertise in machine learning and applied AI.</p>
+
+              <p class="muted">Contact: <a href="mailto:hamzaahmedsiddiqui10@gmail.com">hamzaahmedsiddiqui10@gmail.com</a></p>
+            </div>
+            <div style="width:220px;min-width:180px">
+              <!-- Photo placeholder: replace with an <img> or your avatar -->
+              <div style="width:220px;height:220px;border-radius:12px;background:linear-gradient(180deg,#f0f2f6,#e8edf5);display:flex;align-items:center;justify-content:center;color:var(--muted);border:1px solid var(--border)">Photo</div>
+            </div>
           </div>
-        </section>
 
-        <section id="projects">
-          <h2>Selected Projects</h2>
-          <div class="grid">
-          <article class="card">
-            <h3>Airbnb Price Prediction</h3>
-            <p>End-to-end pipeline using gradient boosted trees, feature engineering, and model validation to predict listing prices.</p>
-            <p class="muted">Python • XGBoost • Feature Engineering • Validation</p>
-            <p><a href="https://github.com/hamzasiddiqui10/airbnb_price_prediction_GBTree" target="_blank">View on GitHub</a></p>
-          </article>
-
-          <article class="card">
-            <h3>Nice Lovable People — NLP (qub3s)</h3>
-            <p>A natural language processing project (2025) focusing on modeling and analysis of text to identify and classify social attributes.</p>
-            <p class="muted">NLP • Python • Transformers • Analysis</p>
-            <p><a href="https://github.com/qub3s/nlp_2025_NiceLovablePeople" target="_blank">View on GitHub</a></p>
-          </article>
-
-          <article class="card">
-            <h3>CS50 Project</h3>
-            <p>Course project from CS50 — small applications and problem-solving exercises demonstrating programming fundamentals.</p>
-            <p class="muted">C • Python • Algorithms</p>
-            <p><a href="https://github.com/hamzasiddiqui10/CS50-project" target="_blank">View on GitHub</a></p>
-          </article>
-
-          <article class="card">
-            <h3>Sample Project (Files)</h3>
-            <p>A small sample project demonstrating how to store files per project in the `projects/` directory.</p>
-            <p><a href="/projects/">Open Project Files</a></p>
-          </article>
-        </div>
-          <p class="more muted">For full project files and datasets, browse the Project Files directory.</p>
-        </section>
-
-        <section id="contact" style="margin-top:28px">
-          <h2>Contact</h2>
-          <p>If you’d like to collaborate or see specific project files, email: <a href="mailto:hamzaahmedsiddiqui10@gmail.com">hamzaahmedsiddiqui10@gmail.com</a>.</p>
-          <p>Find me on <a href="https://github.com/hamzasiddiqui10" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a>.</p>
+          <!-- social buttons -->
+          <div style="margin-top:20px;display:flex;gap:12px;align-items:center">
+            <a class="btn" href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank" aria-label="LinkedIn">🔗 LinkedIn</a>
+            <a class="btn" href="https://github.com/hamzasiddiqui10" target="_blank" aria-label="GitHub">🐙 GitHub</a>
+            <a class="btn" href="mailto:hamzaahmedsiddiqui10@gmail.com" aria-label="Email">✉️ Email</a>
+          </div>
         </section>
 
         <footer class="site-footer">

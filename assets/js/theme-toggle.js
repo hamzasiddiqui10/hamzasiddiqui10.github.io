@@ -26,10 +26,20 @@
   }
 
   function updateToggleUI(theme){
-    const btn = document.getElementById('themeToggleBtn');
-    if(!btn) return;
-    btn.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
-    btn.setAttribute('aria-pressed', String(theme === 'dark'));
+    // Support both button and checkbox slide toggle
+    const el = document.getElementById('themeToggleBtn');
+    if(!el) return;
+    if(el.tagName === 'INPUT' && el.type === 'checkbox'){
+      el.checked = theme === 'dark';
+      el.setAttribute('aria-pressed', String(theme === 'dark'));
+      // update emoji label if present
+      const lbl = el.closest('.switch') && el.closest('.switch').querySelector('.label');
+      if(lbl) lbl.textContent = theme === 'dark' ? '☀️' : '🌙';
+    } else {
+      // fallback: button
+      el.textContent = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+      el.setAttribute('aria-pressed', String(theme === 'dark'));
+    }
   }
 
   // init
@@ -39,9 +49,19 @@
     updateToggleUI(theme);
 
     // delegate clicks from any toggle button
+    // Handle clicks for button-style toggles and changes for checkbox-style toggles
     document.addEventListener('click', function(e){
       const t = e.target.closest && e.target.closest('#themeToggleBtn');
-      if(t) toggleTheme();
+      if(t && t.tagName !== 'INPUT') toggleTheme();
+    });
+    document.addEventListener('change', function(e){
+      if(e.target && e.target.id === 'themeToggleBtn' && e.target.tagName === 'INPUT'){
+        // checkbox changed
+        const next = e.target.checked ? 'dark' : 'light';
+        applyTheme(next);
+        try{ localStorage.setItem(storageKey, next); }catch(e){}
+        updateToggleUI(next);
+      }
     });
 
     // react to system changes if user hasn't explicitly set
