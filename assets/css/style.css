@@ -22,7 +22,7 @@ html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe U
 .sidebar-nav a{color:var(--text);text-decoration:none;font-weight:500;padding:8px 10px;display:inline-block;border-radius:6px}
 .sidebar-nav a:hover{background:var(--page-bg)}
 .sidebar .meta{margin-top:22px;color:var(--muted);font-size:0.9rem}
-.content{flex:1;padding:36px;max-width:980px;margin:0 auto}
+.content{flex:1;padding:36px}
 .hero{display:flex;flex-wrap:wrap;gap:24px;align-items:center;margin-bottom:18px}
 .hero h1{margin:0;font-family:Merriweather,serif;font-size:2rem}
 .lead{color:var(--muted);margin-top:8px}
@@ -31,7 +31,68 @@ html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe U
 .card h3{margin:0 0 8px}
 .muted{color:var(--muted)}
 .btn{display:inline-block;padding:8px 12px;border-radius:6px;background:transparent;color:var(--accent);border:1px solid var(--border);text-decoration:none}
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 2px solid var(--border);
+  box-shadow: 0 4px 16px rgba(15,23,36,0.06);
+  transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.icon-btn svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+}
+.icon-btn.linkedin:hover {
+  box-shadow: 0 4px 16px rgba(0,119,181,0.18);
+  border-color: #0077B5;
+  transform: translateY(-2px) scale(1.08);
+}
+.icon-btn.github:hover {
+  box-shadow: 0 4px 16px rgba(24,23,23,0.18);
+  border-color: #181717;
+  transform: translateY(-2px) scale(1.08);
+}
+.icon-btn.email:hover {
+  box-shadow: 0 4px 16px rgba(234,67,53,0.18);
+  border-color: #EA4335;
+  transform: translateY(-2px) scale(1.08);
+}
+/* Small, compact social buttons used in the sidebar */
+.sidebar .social-row{display:flex;gap:10px;align-items:center}
+.sidebar .icon-btn.small{
+  width:36px;
+  height:36px;
+  border-radius:8px;
+  background:var(--surface);
+  border:1px solid rgba(0,0,0,0.06);
+  box-shadow:0 2px 6px rgba(15,23,36,0.04);
+  transition:transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+  padding:0;
+}
+.sidebar .icon-btn.small svg{width:18px;height:18px;display:block}
+.sidebar .icon-btn.small:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 6px 12px rgba(15,23,36,0.06)}
 .site-footer{padding:28px 36px;border-top:1px solid var(--border);color:var(--muted);background:transparent}
+
+/* Make the landing-page social buttons larger (double size) while keeping sidebar small buttons unchanged */
+.social-btns .icon-btn{
+  width:128px;
+  height:128px;
+  border-radius:18px;
+  border-width:2px;
+}
+.social-btns .icon-btn svg{
+  width:88px;
+  height:88px;
+}
 
 @media (max-width:860px){
   .site{flex-direction:column}
