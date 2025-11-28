@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Repositories — Hamza A. Siddiqui</title>
+    <title>Countdown for Events — Hamza Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   </head>
@@ -21,7 +21,6 @@
             <li><a href="/projects/">Projects</a></li>
             <li><a href="/cv.html">CV</a></li>
             <li><a href="mailto:hamzaahmedsiddiqui10@gmail.com">Contact</a></li>
-            <li><a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank">LinkedIn</a></li>
           </ul>
         </nav>
 
@@ -55,27 +54,64 @@
       </aside>
 
       <main class="content">
-        <h1>Repositories</h1>
-        <p class="muted">This page can list your GitHub repositories or link to specific repos. Placeholder for now.</p>
+        <h1>Countdown for Events</h1>
+        <p class="muted">Repository: <a href="https://github.com/hamzasiddiqui10/countdown_for_events" target="_blank">hamzasiddiqui10/countdown_for_events</a></p>
 
-        <section class="grid" style="margin-top:18px">
-          <article class="card">
-            <h3>CS50-project</h3>
-            <p class="muted">Link: <a href="https://github.com/hamzasiddiqui10/CS50-project" target="_blank">hamzasiddiqui10/CS50-project</a></p>
-          </article>
-          <article class="card">
-            <h3>Airbnb Price Prediction</h3>
-            <p class="muted">Link: <a href="https://github.com/hamzasiddiqui10/airbnb_price_prediction_GBTree" target="_blank">airbnb_price_prediction_GBTree</a></p>
-          </article>
+        <section style="margin-top:18px">
+          <h2>Description</h2>
+          <p>A Flask web application that allows users to create, manage, and track countdown timers for their upcoming events. Features user authentication, real-time countdown displays, and event management capabilities built with Python, Flask, and SQLite.</p>
         </section>
 
-        <footer class="site-footer">
-          <small class="muted">© <span id="year-sidebar"></span> Hamza A. Siddiqui</small>
-        </footer>
+        <section style="margin-top:18px">
+          <h2>Key Features</h2>
+          <ul style="margin-top:8px">
+            <li><strong>User Authentication</strong> — Secure account registration and login system</li>
+            <li><strong>Event Management</strong> — Create, edit, and delete personal events</li>
+            <li><strong>Live Countdown Timers</strong> — Real-time countdown display for each event</li>
+            <li><strong>Event Persistence</strong> — Events are stored in SQLite database and persist across sessions</li>
+            <li><strong>Responsive Design</strong> — Works seamlessly on desktop and mobile devices</li>
+            <li><strong>Intuitive Interface</strong> — Simple, clean UI for easy event tracking</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Technology Stack</h2>
+          <ul style="margin-top:8px">
+            <li><strong>Backend:</strong> Flask (Python web framework)</li>
+            <li><strong>Database:</strong> SQLite (lightweight, file-based)</li>
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Authentication:</strong> Flask-Login with session management</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Getting Started</h2>
+          <p>To run this project locally:</p>
+          <ol style="margin-top:8px">
+            <li>Clone the repository from GitHub</li>
+            <li>Install dependencies: <code>pip install flask flask-login</code></li>
+            <li>Run the Flask application: <code>python app.py</code></li>
+            <li>Open your browser to <code>http://localhost:5000</code></li>
+            <li>Create an account and start tracking your events</li>
+          </ol>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Usage</h2>
+          <p>After logging in:</p>
+          <ul style="margin-top:8px">
+            <li>Click "New Event" to create a countdown</li>
+            <li>Enter event name and date/time</li>
+            <li>View live countdown timer on your dashboard</li>
+            <li>Edit or delete events as needed</li>
+          </ul>
+        </section>
+
+        <script src="/assets/js/theme-toggle.js"></script>
+        <script>
+          document.getElementById("year-sidebar").textContent = new Date().getFullYear();
+        </script>
       </main>
     </div>
-
-    <script src="/assets/js/theme-toggle.js"></script>
-    <script>document.getElementById('year-sidebar').textContent = new Date().getFullYear();</script>
   </body>
 </html>

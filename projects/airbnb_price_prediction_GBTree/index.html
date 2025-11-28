@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>CS50 Project — Hamza Siddiqui</title>
+    <title>Airbnb Price Prediction — Hamza Siddiqui</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
   </head>
@@ -54,81 +54,88 @@
       </aside>
 
       <main class="content">
-        <h1>HANGMAN</h1>
-        <p class="muted">Repository: <a href="https://github.com/hamzasiddiqui10/CS50-project" target="_blank">hamzasiddiqui10/CS50-project</a></p>
-
-        <section style="margin-top:18px">
-          <h2>Video Demo</h2>
-          <p><a href="https://www.youtube.com/watch?v=NcOIOGt3GYw" target="_blank">Watch 2-minute demo on YouTube</a></p>
-        </section>
+        <h1>Airbnb Price Prediction (GBTree)</h1>
+        <p class="muted">Repository: <a href="https://github.com/hamzasiddiqui10/airbnb_price_prediction_GBTree" target="_blank">hamzasiddiqui10/airbnb_price_prediction_GBTree</a></p>
 
         <section style="margin-top:18px">
           <h2>Description</h2>
-          <p>A hangman game written in Python that you can easily play in the Linux terminal. Test your word-guessing skills against 260,000+ English words!</p>
+          <p>A machine learning project that predicts Airbnb listing prices in Berlin using the CatBoost gradient boosting algorithm. This project demonstrates a complete data science workflow including exploratory data analysis, feature engineering, model training, hyperparameter tuning, and comprehensive evaluation.</p>
         </section>
 
         <section style="margin-top:18px">
-          <h2>Files</h2>
+          <h2>Key Features</h2>
           <ul style="margin-top:8px">
-            <li><strong>hangman.py</strong> — Main program (execute this file to play)</li>
-            <li><strong>english_words.txt</strong> — 260,000+ English words used by the game to randomly pick words</li>
-            <li><strong>README.md</strong> — Documentation</li>
+            <li><strong>Comprehensive EDA</strong> — In-depth exploratory data analysis with visualizations</li>
+            <li><strong>Feature Engineering</strong> — Strategic feature creation and transformation for improved model performance</li>
+            <li><strong>CatBoost Model</strong> — Gradient boosting implementation optimized for categorical features</li>
+            <li><strong>Hyperparameter Tuning</strong> — Grid search and cross-validation for optimal model configuration</li>
+            <li><strong>Model Evaluation</strong> — Multiple metrics including RMSE, MAE, and R² score</li>
+            <li><strong>Production-Ready Code</strong> — Clean, documented code following best practices</li>
           </ul>
         </section>
 
         <section style="margin-top:18px">
-          <h2>How to Play</h2>
-          <p>Running the hangman.py file starts the program. The program will:</p>
+          <h2>Dataset</h2>
+          <p>The project uses a Berlin Airbnb dataset containing:</p>
+          <ul style="margin-top:8px">
+            <li>Multiple listing features (room type, neighborhood, amenities, reviews, etc.)</li>
+            <li>Target variable: nightly price in EUR</li>
+            <li>Mix of numerical and categorical features</li>
+            <li>Real-world data requiring preprocessing and cleaning</li>
+          </ul>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Modeling Approach</h2>
+          <p>The project follows a structured machine learning pipeline:</p>
           <ol style="margin-top:8px">
-            <li>Display the game name, author, and rules</li>
-            <li>Pick a random word from 260,000+ English words</li>
-            <li>Give you 9 tries to guess letters</li>
-            <li>Display a hangman graphic that updates with each mistake</li>
+            <li><strong>Data Loading & Exploration:</strong> Understand data shape, missing values, distributions</li>
+            <li><strong>Data Cleaning:</strong> Handle missing values, outliers, and data inconsistencies</li>
+            <li><strong>Feature Engineering:</strong> Create derived features, encode categorical variables</li>
+            <li><strong>Model Training:</strong> Train CatBoost model with train/test split</li>
+            <li><strong>Hyperparameter Tuning:</strong> Optimize model parameters using cross-validation</li>
+            <li><strong>Evaluation:</strong> Assess model performance on test set and make predictions</li>
           </ol>
-          <p style="margin-top:12px">Win by guessing all letters before making 9 mistakes. Lose if your tries run out.</p>
         </section>
 
         <section style="margin-top:18px">
-          <h2>User Input</h2>
-          <p>The game accepts only single alphabetic characters. Invalid inputs include:</p>
+          <h2>Results</h2>
+          <p>The CatBoost model achieves strong predictive performance on the Berlin Airbnb pricing task, with detailed metrics and visualizations available in the notebook. Feature importance analysis reveals which listing attributes most significantly influence price predictions.</p>
+        </section>
+
+        <section style="margin-top:18px">
+          <h2>Technologies & Libraries</h2>
           <ul style="margin-top:8px">
-            <li>Numbers (e.g., 1, 2, 135)</li>
-            <li>Multiple letters (e.g., afd, agfsg)</li>
-            <li>Empty strings</li>
+            <li><strong>Python</strong> — Primary programming language</li>
+            <li><strong>CatBoost</strong> — Gradient boosting framework</li>
+            <li><strong>Pandas</strong> — Data manipulation and analysis</li>
+            <li><strong>NumPy</strong> — Numerical computations</li>
+            <li><strong>Scikit-learn</strong> — Model evaluation and preprocessing utilities</li>
+            <li><strong>Matplotlib & Seaborn</strong> — Data visualization</li>
           </ul>
-          <p style="margin-top:12px">Invalid inputs are rejected with an error message, and you're prompted to re-enter. The game is case-insensitive.</p>
         </section>
 
         <section style="margin-top:18px">
-          <h2>Program Structure</h2>
-          <p>The main logic of hangman.py is built around a sophisticated while loop with multiple conditionals that keep the program running until you either:</p>
-          <ul style="margin-top:8px">
-            <li>Win (all letters of the word guessed correctly)</li>
-            <li>Lose (remaining tries become zero)</li>
-          </ul>
-          <p style="margin-top:12px">The <code>hangman_image(n)</code> function displays the correct hangman graphic based on your remaining tries, providing visual motivation!</p>
+          <h2>How to Run</h2>
+          <ol style="margin-top:8px">
+            <li>Clone the repository from GitHub</li>
+            <li>Install dependencies: <code>pip install catboost pandas numpy scikit-learn matplotlib seaborn</code></li>
+            <li>Run the Jupyter notebook or Python script to train the model</li>
+            <li>View predictions and evaluation metrics</li>
+            <li>Use the trained model for price predictions on new listings</li>
+          </ol>
         </section>
 
         <section style="margin-top:18px">
-          <h2>Key Challenges</h2>
-          <h3 style="margin-top:12px; font-size:1rem">Hiding and Revealing Letters</h3>
-          <p>Since strings are immutable in Python, the program converts the word into a list of characters. Lists are mutable, allowing easy hiding and revealing of guessed letters. When printing, the list is joined back into a string using <code>" ".join(result)</code>.</p>
-          
-          <h3 style="margin-top:12px; font-size:1rem">Hangman Graphics</h3>
-          <p>Displaying the hangman graphic required linking the image output to the number of tries remaining. Once this strategy was developed, generating the correct graphic based on <code>n</code> (tries left) became straightforward.</p>
+          <h2>Declaration of AI Use</h2>
+          <p>An LLM was used to write this README file.</p>
         </section>
 
-        <section style="margin-top:18px">
-          <h2>Enjoy the game!</h2>
-          <p>Clone the repository and run <code>python hangman.py</code> to start playing!</p>
-        </section>
-
-        <footer class="site-footer" style="margin-top:28px">
-          <small class="muted">© <span id="year-sidebar"></span> Hamza Siddiqui</small>
-        </footer>
+        <script src="/assets/js/theme-toggle.js"></script>
+        <script>
+          document.getElementById("year-sidebar").textContent = new Date().getFullYear();
+        </script>
       </main>
     </div>
-    <script src="/assets/js/theme-toggle.js"></script>
-    <script>document.getElementById('year-sidebar').textContent = new Date().getFullYear();</script>
   </body>
 </html>
