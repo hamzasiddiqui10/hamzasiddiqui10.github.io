@@ -1,0 +1,60 @@
+======================================================
+PORTFOLIO WEBSITE MAINTENANCE & DEPLOYMENT GUIDE
+======================================================
+
+1. INITIAL DEPLOYMENT TO GITHUB PAGES
+------------------------------------------------------
+1. Create a new public repository on GitHub named exactly: [YOUR GITHUB USERNAME].github.io
+2. Open your terminal/command prompt, navigate to your project folder, and run:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/[YOUR GITHUB USERNAME]/[YOUR GITHUB USERNAME].github.io.git
+   git push -u origin main
+3. In your GitHub repository, go to Settings > Pages. Under "Build and deployment", ensure the source is set to "Deploy from a branch" and the branch is set to "main".
+4. Your website will be live at https://[YOUR GITHUB USERNAME].github.io within a few minutes.
+
+
+2. CONTENT UPDATES
+------------------------------------------------------
+A. ADDING A NEW PUBLICATION
+Copy and paste this block inside the `<section id="publications">` in index.html:
+
+<div class="card">
+    <p class="meta">[CONFERENCE, YEAR]</p>
+    <h3 class="card-title">[PAPER TITLE]</h3>
+    <p class="authors"><strong>[YOUR FULL NAME]</strong>, [CO-AUTHORS]</p>
+    <div class="card-links">
+        <a href="[LINK]" target="_blank" class="btn">View PDF &nearr;</a>
+    </div>
+</div>
+
+B. ADDING A NEW PROJECT
+Copy and paste this block inside the `<section id="projects">` in index.html:
+
+<div class="card">
+    <p class="meta">[TOOL/FRAMEWORK] | [MONTH, YEAR]</p>
+    <h3 class="card-title">[PROJECT TITLE]</h3>
+    <p class="description">[ONE SENTENCE DESCRIPTION]</p>
+    <div class="card-links">
+        <a href="[LINK]" target="_blank" class="btn">GitHub &nearr;</a>
+    </div>
+</div>
+
+C. UPDATING YOUR RESUME OR PROFILE PHOTO
+1. To update your PDF, replace `assets/cv/resume.pdf` with your new PDF file, keeping the exact same filename.
+2. To update your photo, replace `assets/img/profile.jpg` with a square, high-quality image, keeping the exact same filename.
+3. Commit and push your changes to GitHub.
+
+
+3. STYLING TWEAKS
+------------------------------------------------------
+Open `assets/css/style.css` and look at the `:root` block at the very top. 
+
+- To change the background color (currently the soft pale pink from your reference), edit `--bg-color: #f0eaed;`
+- To create a "Dark Mode", swap the values:
+    --bg-color: #1a1a1a;
+    --text-main: #f0eaed;
+    --text-muted: #a0a0a0;
+- To change the font, modify `--font-sans`.

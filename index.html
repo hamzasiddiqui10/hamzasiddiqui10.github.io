@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR FULL NAME] | [YOUR TITLE]</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Optional: Boxicons for lightweight social icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- LEFT SIDEBAR -->
+    <nav class="sidebar">
+        <div class="sidebar-content">
+            <div class="profile-section">
+                <img src="assets/img/profile.jpg" alt="[YOUR FULL NAME]" class="profile-img">
+                <h1>[YOUR FULL NAME]</h1>
+                <h2>[YOUR TITLE]</h2>
+                <p class="bio">
+                    Master's student in Applied Data Science at the University of Göttingen. My research focuses on computer vision, video action recognition, and mitigating object bias using multi-modal architectures.
+                </p>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#publications" class="nav-item">Publications</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#experience" class="nav-item">Experience</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
+            </ul>
+
+            <div class="social-links">
+                <a href="[LINK TO GITHUB]" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="[LINK TO GOOGLE SCHOLAR]" target="_blank" aria-label="Google Scholar"><i class='bx bxs-graduation'></i></a>
+                <a href="[LINK TO LINKEDIN]" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="[LINK TO X/TWITTER]" target="_blank" aria-label="X/Twitter"><i class='bx bxl-twitter'></i></a>
+                <a href="assets/cv/resume.pdf" target="_blank" aria-label="CV"><i class='bx bx-file-blank'></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- RIGHT MAIN CONTENT -->
+    <main class="content">
+
+        <!-- PUBLICATIONS SECTION -->
+        <section id="publications">
+            <h2 class="section-title">Publications & Research</h2>
+            
+            <div class="card">
+                <p class="meta">[CONFERENCE/JOURNAL ABBREVIATION, YEAR]</p>
+                <h3 class="card-title">[TITLE OF PANAF-FGBG PRIMATE ACTION RECOGNITION PAPER/REPORT]</h3>
+                <p class="authors"><strong>[YOUR FULL NAME]</strong>, [CO-AUTHOR 1], [CO-AUTHOR 2]</p>
+                <div class="card-links">
+                    <a href="[LINK TO PDF]" target="_blank" class="btn">View Report &nearr;</a>
+                    <a href="[LINK TO CODE OR PRESENTATION]" target="_blank" class="btn">Code &nearr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="meta">[SEMINAR/VENUE, YEAR]</p>
+                <h3 class="card-title">Dynamic Uniform Information Density: Extending Surprisal Estimation to Video Contexts</h3>
+                <p class="authors"><strong>[YOUR FULL NAME]</strong></p>
+                <div class="card-links">
+                    <a href="[LINK TO PROPOSAL PDF]" target="_blank" class="btn">View Proposal &nearr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="card">
+                <p class="meta">Something-Something v2 | [MONTH, YEAR]</p>
+                <h3 class="card-title">Object Occlusion and Bias Mitigation in Video Action Recognition</h3>
+                <p class="description">Extracted DINOv2 features from center frames censored with SAM3 bounding boxes to train attentive classification probes, analyzing optical flow dependency vs. RGB spatial bias.</p>
+                <div class="card-links">
+                    <a href="[LINK TO GITHUB REPO]" target="_blank" class="btn">GitHub &nearr;</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <p class="meta">V-JEPA 2.1 | [MONTH, YEAR]</p>
+                <h3 class="card-title">High-Performance Video Feature Extraction Pipeline</h3>
+                <p class="description">Developed a multi-processed PyTorch extraction script utilizing PyAV video loading to encode frames via V-JEPA 2.1 ViT-Base, exporting representations to sharded HDF5 files on a Slurm HPC cluster.</p>
+                <div class="card-links">
+                    <a href="[LINK TO GITHUB REPO]" target="_blank" class="btn">GitHub &nearr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-date">[MONTH] 2026 – Present</div>
+                <div class="timeline-content">
+                    <h3>Student Research Assistant (HiWi)</h3>
+                    <h4>Ecker Lab & Gipp Lab, University of Göttingen</h4>
+                    <p>Conducting dual research roles: focusing on computer vision and foundation models (Ecker Lab) and serving as a teaching assistant for natural language processing (Gipp Lab).</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">[START YEAR] – 2024</div>
+                <div class="timeline-content">
+                    <h3>Data Scientist</h3>
+                    <h4>[COMPANY NAME], Istanbul</h4>
+                    <p>[BRIEF DESCRIPTION OF YOUR RESPONSIBILITIES AND ACHIEVEMENTS OVER THESE 5 YEARS].</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="timeline-item">
+                <div class="timeline-date">2024 – 2026</div>
+                <div class="timeline-content">
+                    <h3>University of Göttingen</h3>
+                    <h4>M.S. in Applied Data Science</h4>
+                    <p>Cumulative GPA: 1.2</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-date">[START YEAR] – [END YEAR]</div>
+                <div class="timeline-content">
+                    <h3>[UNIVERSITY NAME]</h3>
+                    <h4>B.S. in Economics and Mathematics</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <p>I am currently exploring opportunities for Machine Learning Engineer, AI Engineer, and Data Scientist positions, as well as PhD programs in Germany starting in late 2026.</p>
+            <p>Feel free to reach out to me at:</p>
+            <a href="mailto:[YOUR EMAIL ADDRESS]" class="contact-email">[YOUR EMAIL ADDRESS]</a>
+        </section>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
