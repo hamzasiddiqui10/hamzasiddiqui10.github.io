@@ -46,8 +46,8 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
 }
 
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 12px;
     object-fit: cover;
     margin-bottom: 1.5rem;
