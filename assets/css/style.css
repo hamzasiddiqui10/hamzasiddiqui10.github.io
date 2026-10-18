@@ -5,7 +5,7 @@
     --text-muted: #555555;
     --border-color: #d1c8cb;
     --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --sidebar-width: 420px;
+    --sidebar-width: 480px;
 }
 
 * {
@@ -40,7 +40,7 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
     position: fixed;
     top: 0;
     left: 0;
-    padding: 3rem 3rem;
+    padding: 5rem 5rem;
     display: flex;
     flex-direction: column;
 }
@@ -118,7 +118,7 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
 .content {
     /* margin-left: var(--sidebar-width); */
     margin-left: 400px;
-    padding: 4rem 10%;
+    padding: 5rem 10%;
     max-width: 1100px;
     width: 100%;
 }
