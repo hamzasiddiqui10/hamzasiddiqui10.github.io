@@ -64,7 +64,9 @@ Open `assets/css/style.css` and look at the `:root` block at the very top.
 
 
 --------
-Project ideas:
 
+Projects Section ideas:
+
+vgd repo create some projects. perhaps the vjepa features and then attentive probe on top. thats a good one.
 repo bbox_detection_sam3 as project - make readme first
 repo DL4CV, steal something from one of the exercises and present as a project!
