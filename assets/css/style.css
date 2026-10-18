@@ -5,7 +5,7 @@
     --text-muted: #555555;
     --border-color: #d1c8cb;
     --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    --sidebar-width: 550px;
+    --sidebar-width: 450px;
 }
 
 * {
@@ -69,15 +69,28 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
 .nav-item {
     text-decoration: none;
     color: var(--text-muted);
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     transition: color 0.2s ease;
     display: flex;
     align-items: center;
 }
 
-.nav-item::before {
+/* .nav-item::before {
     content: "—";
     margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateX(-10px);
+} */
+
+.nav-item::before {
+    content: "";
+    display: inline-block;
+    width: 20px; /* Increase this number (e.g., 40px, 50px) to make the line longer */
+    height: 1.5px;
+    background-color: currentColor;
+    margin-right: 10px;
+    vertical-align: middle;
     opacity: 0;
     transition: opacity 0.2s ease, transform 0.2s ease;
     transform: translateX(-10px);
