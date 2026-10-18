@@ -64,5 +64,6 @@ Open `assets/css/style.css` and look at the `:root` block at the very top.
 
 
 --------
+3. Add loading page with cycle gif like laya iyer.
 4. Fill information
 5. Add github activity thing in the page.
