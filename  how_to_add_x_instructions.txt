@@ -64,3 +64,7 @@ Open `assets/css/style.css` and look at the `:root` block at the very top.
 
 
 --------
+Project ideas:
+
+repo bbox_detection_sam3 as project - make readme first
+repo DL4CV, steal something from one of the exercises and present as a project!
