@@ -1,6 +1,6 @@
 /* GLOBAL VARIABLES & THEME */
 :root {
-    --bg-color: #f0eaed; /* Soft pale pink/lavender matching reference */
+    --bg-color: #FFF8DC; 
     --text-main: #111111;
     --text-muted: #555555;
     --border-color: #d1c8cb;
@@ -163,10 +163,10 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
     text-decoration: none;
     font-size: 0.85rem;
     color: var(--text-main);
-    background-color: rgba(255, 255, 255, 0.4);
+    /* background-color: rgba(255, 255, 255, 0.4); */
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
-    border: 2px solid var(--border-color);
+    border: 1.5px solid var(--text-main);
     transition: all 0.2s ease; /* Changed to 'all' so the text color animates smoothly */
 }
 

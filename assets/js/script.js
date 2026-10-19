@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
 // --- LOADING SCREEN FADE OUT ---
 document.addEventListener("DOMContentLoaded", () => {
     const loaderWrapper = document.getElementById("loader-wrapper");
@@ -48,3 +47,5 @@ document.addEventListener("DOMContentLoaded", () => {
         
     }, 1600); 
 });
+
+
