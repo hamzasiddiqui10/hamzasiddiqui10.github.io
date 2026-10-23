@@ -218,6 +218,22 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
     border-bottom: 2px solid var(--text-main);
 }
 
+
+/* --- INVISIBLE INLINE LINKS --- */
+.org-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+/* Optional but recommended: A subtle color shift when the mouse hovers over it, so users know it is clickable */
+.org-link:hover {
+    color: var(--text-main); 
+}
+
+
+
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 900px) {
     body { flex-direction: column; }
