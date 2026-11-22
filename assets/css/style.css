@@ -125,6 +125,20 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
 
 
 
+.sidebar-footer {
+    margin-top: 1.25rem;
+}
+
+.sidebar-footer p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    opacity: 0.75;
+    line-height: 1.5;
+    margin-bottom: 0.15rem;
+}
+
+
+
 /* MAIN CONTENT */
 .content {
     /* margin-left: var(--sidebar-width); */
