@@ -32,14 +32,15 @@
                 <h1>Hamza A. Siddiqui</h1>
                 <h2>MSc @ Uni-Göttingen</h2>
                 <p class="bio">
-                    AI researcher focused on computer vision, video action recognition, and mitigating object bias using multi-modal architectures.
+                    Data Scientist | ML/AI Researcher
                 </p>
             </div>
 
             <ul class="nav-links">
-                <li><a href="#experience" class="nav-item">Experience</a></li>
-                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="#experience" class="nav-item">Work Experience</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>           
                 <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>    
                 <!-- <li><a href="#publications" class="nav-item">Publications</a></li> -->
                 <li><a href="#contact" class="nav-item">Contact</a></li>
             </ul>
@@ -49,95 +50,148 @@
                 <!-- <a href="[LINK TO GOOGLE SCHOLAR]" target="_blank" aria-label="Google Scholar"><i class='bx bxs-graduation'></i></a> -->
                 <a href="https://www.linkedin.com/in/hamza-a-siddiqui/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
                 <a href="assets/cv/Hamza_Siddiqui_Data_Scientist_CV.pdf" target="_blank" aria-label="CV"><i class="bx bx-detail"></i></a>
-            </div>
+                <a href="mailto:hamzaahmedsiddiqui10@gmail.com" aria-label="Email"><i class='bx bx-envelope'></i></a>
         </div>
     </nav>
 
     <!-- RIGHT MAIN CONTENT -->
     <main class="content">
 
+
+
         <!-- EXPERIENCE SECTION -->
         <section id="experience">
-            <h2 class="section-title">Experience</h2>
+            <h2 class="section-title">Work Experience</h2>
 
-            <!-- eckerlab -->
-            <div class="timeline-item">
-                <div class="timeline-date">2026 – Present</div>
-                <div class="timeline-content">
-                    <h3>Research Assistant (HiWi)</h3>
-                    <h4><a href="https://eckerlab.org" target="_blank" class="org-link">EckerLab @ Uni-Göttingen</a></h4>
-                    <p>Focusing on research in computer vision and foundation models.</p>
-                </div>
-            </div>
+            <!-- EckerLab -->
+            <details class="exp-item">
+                <summary class="exp-summary">
+                    <div class="exp-summary-inner">
+                        <div class="exp-top-row">
+                            <span class="exp-role">Research Assistant - Computer Vision</span>
+                            <span class="exp-meta">
+                                <span class="exp-date">2026 – Present</span>
+                                <span class="exp-toggle" aria-hidden="true">+</span>
+                            </span>
+                        </div>
+                        <div class="exp-org">
+                            <a href="https://eckerlab.org" target="_blank" class="org-link">EckerLab @ Uni-Göttingen</a>
+                        </div>
+                    </div>
+                </summary>
+                <ul class="exp-bullets">
+                    <li>Engineered modular PyTorch training pipelines across 8 model architectures and 3 large video datasets.</li>
+                    <li>Optimized PyTorch DataLoader throughput and I/O caching, increasing GPU utilization by 40% during training.</li>
+                    <li>Downloaded, processed, and trained models on multi-terabyte video datasets (200K+ videos) on Slurm HPC clusters.</li>
+                    <li>Fine-tuned multimodal (RGB and optical flow) two-stream video models with late fusion, improving video action classification uAP from 72.8 to 75.2.</li>
+                    <li>Precomputed and sharded frozen vision foundation model embeddings in HDF5 across 20,000+ videos to accelerate downstream training and inference.</li>
+                    <li>Built a SAM3 object-occlusion pipeline processing 190K+ videos to quantify spatial bias in vision models.</li>
+                    <li>Built automated evaluation pipelines benchmarking cloud Vision-Language Models (VLMs) via OpenAI and OpenRouter APIs with structured JSON outputs.</li>
+                    <li>Implemented token-tracking workflows across VLM API evaluations, reducing inference costs by 31%.</li>
+                    <li>Reduced video storage footprint by 83% using FFmpeg compression with zero loss in downstream accuracy.</li>
+                    <li>Consolidated noisy video action labels with NLTK, reducing the target label space from 174 to 37 classes to improve evaluation protocol for VLMs.</li>
+                </ul>
+            </details>
 
-            <!-- Gipplab -->
-            <div class="timeline-item">
-                <div class="timeline-date">2025 – Present</div>
-                <div class="timeline-content">
-                    <h3>Research Assistant (HiWi)</h3>
-                    <h4><a href="https://gipplab.uni-goettingen.de" target="_blank" class="org-link">GippLab @ Uni-Göttingen</a></h4>
-                    <p>Serving as a teaching assistant for Deep Learning and NLP courses.</p>
-                </div>
-            </div>
+            <!-- GippLab -->
+            <details class="exp-item">
+                <summary class="exp-summary">
+                    <div class="exp-summary-inner">
+                        <div class="exp-top-row">
+                            <span class="exp-role">Research Assistant - NLP</span>
+                            <span class="exp-meta">
+                                <span class="exp-date">2025 – Present</span>
+                                <span class="exp-toggle" aria-hidden="true">+</span>
+                            </span>
+                        </div>
+                        <div class="exp-org">
+                            <a href="https://gipplab.uni-goettingen.de" target="_blank" class="org-link">GippLab @ Uni-Göttingen</a>
+                        </div>
+                    </div>
+                </summary>
+                <ul class="exp-bullets">
+                <li>Mentored 200+ students in ‘Deep Learning for NLP’ and ‘Python for Data Science’ courses, debugging ML code and grading technical assignments.</li>
+                <li>Authored a tutorial on Transformer architecture from scratch, dissecting self-attention and matrix operations.</li>
+                <li>Built a hybrid sentiment classification architecture combining BERT embeddings with SentiWordNet and VADER lexicon features via a learned gating mechanism, improving validation accuracy by 2.3%.</li>
+                </ul>
+            </details>
 
             <!-- Afiniti: Senior Role -->
-            <div class="timeline-item" style="margin-bottom: 0.5rem;">
-                <div class="timeline-date">2023 – 2025</div>
-                <div class="timeline-content">
-                    <h3>Senior Data Scientist</h3>
-                    <!-- <h4>Afiniti, Istanbul</h4> -->
-                     <h4><a href="https://www.afiniti.com" target="_blank" class="org-link">Afiniti</a>, Istanbul</h4>
-                    <!-- <p>[DESCRIPTION OF SENIOR RESPONSIBILITIES].</p> -->
-                </div>   
-            </div>
+            <details class="exp-item">
+                <summary class="exp-summary">
+                    <div class="exp-summary-inner">
+                        <div class="exp-top-row">
+                            <span class="exp-role">Senior Data Scientist | Data Scientist | Junior Data Scientist</span>
+                            <span class="exp-meta">
+                                <span class="exp-date">2020 – 2025</span>
+                                <span class="exp-toggle" aria-hidden="true">+</span>
+                            </span>
+                        </div>
+                        <div class="exp-org">
+                            <a href="https://www.afiniti.com" target="_blank" class="org-link">Afiniti</a> (Istanbul, Bermuda, Pakistan)
+                        </div>
+                    </div>
+                </summary>
+                <ul class="exp-bullets">
+                    
+                <li>Led the transformation of a loss-making business unit into a $3.6M/year profit center by auditing ETL pipelines to uncover unaccounted sales and shifting the client's optimization target.</li>
+                <li>Led a team of 6 data scientists for 2.5 years; mentored new hires and presented model performance in stakeholder meetings.</li>
+                <li>Designed and executed time-cycle A/B testing frameworks and causal inference models for enterprise customer-agent pairing, driving a 25% incremental revenue lift over baseline FIFO routing.</li>
+                <li>Built and maintained Bayesian estimation pipelines in Python, R, and Stan to model agent and caller quality from high-volume historical call center logs.</li>
+                <li>Engineered automated data-integrity checks and drift-detection cronjob alerts in Python, R, and SQL, reducing silent pipeline failures and safeguarding real-time production models.</li>
+                <li>Architected scalable ETL and ML workflows using Python, SQL to process multi-million-record customer datasets across cloud environments.</li>
+                <li>Owned end-to-end model shipment by designing feature engineering workflows, training, conducting validation experiments, and deploying models directly into production.</li>
+                <li>Improved next-purchase propensity ROC-AUC from 0.75 to 0.85 via LightGBM models, enabling a 13% sales uplift by prioritizing high-conversion customers in the pairing platform.</li>
+                </ul>
+            </details>
 
-            <!-- Afiniti: Mid-Level Role -->
-            <div class="timeline-item" style="margin-bottom: 0.5rem;">
-                <div class="timeline-date">2022 – 2022</div>
-                <div class="timeline-content">
-                    <h3>Data Scientist</h3>
-                    <h4><a href="https://www.afiniti.com" target="_blank" class="org-link">Afiniti</a>, Istanbul</h4>
-                    <!-- <p>[DESCRIPTION OF MID-LEVEL RESPONSIBILITIES].</p> -->
-                </div>   
-            </div>
+       
 
-            <!-- Afiniti: Junior Role -->
-            <div class="timeline-item">
-                <div class="timeline-date">2020 – 2022</div>
-                <div class="timeline-content">
-                    <h3>Junior Data Scientist</h3>
-                    <h4><a href="https://www.afiniti.com" target="_blank" class="org-link">Afiniti</a>, Pakistan / Bermuda</h4>
-                    <!-- <p>[DESCRIPTION OF JUNIOR RESPONSIBILITIES].</p> -->
-                </div>   
-            </div>
-        </section>
+
+        
+        
+        
+    
+               
 
         <!-- EDUCATION SECTION -->
         <section id="education">
             <h2 class="section-title">Education</h2>
 
-            <div class="timeline-item">
-                <div class="timeline-date">2025 – Present</div>
-                <div class="timeline-content">
-                    <h3>MSc Applied Data Science</h3>
-                    <h4><a href="https://www.uni-goettingen.de" target="_blank" class="org-link">Georg August University of Göttingen</a></h4>
-                    <p>Göttingen, Germany</p>
-                    <p>CGPA: 1.2</p>
+            <div class="exp-item">
+                <div class="exp-top-row">
+                    <span class="exp-role">MSc Applied Data Science</span>
+                    <span class="exp-date">2025 – Present</span>
                 </div>
+                <div class="exp-org">
+                    <a href="https://www.uni-goettingen.de" target="_blank" class="org-link">Georg August University of Göttingen, Germany</a>
+                </div>
+                <div class="edu-sub">Current Grade: <strong>1,2</strong> (90/120 ECTS completed)</div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-date">2016 – 2020</div>
-                <div class="timeline-content">
-                    <h3>BSc Economics</h3>
-                    <h4><a href="https://www.lums.edu.pk/" target="_blank" class="org-link">Lahore University of Management Sciences (LUMS)</a></h4>
-                    <p>Lahore, Pakistan</p>
-                    <p>CGPA: 3.91/4.0 (High Distinction)</p>
+            <div class="exp-item">
+                <div class="exp-top-row">
+                    <span class="exp-role">BSc Economics</span>
+                    <span class="exp-date">2016 – 2020</span>
                 </div>
+                <div class="exp-org">
+                    <a href="https://www.lums.edu.pk/" target="_blank" class="org-link">Lahore University of Management Sciences (LUMS), Pakistan</a>
+                </div>
+                <div class="edu-sub">Overall Grade: <strong>3,91</strong>/4.0 (High Distinction)</div>
             </div>
         </section>
 
-        
+
+
+
+
+
+
+
+
+
+
+
         <!-- PROJECTS SECTION -->
         <section id="projects">
             <h2 class="section-title">Projects</h2>
@@ -149,17 +203,31 @@
                 <!-- <img src="https://github-readme-activity-graph.vercel.app/graph?username=hamzasiddiqui10&bg_color=transparent&color=111111&line=555555&point=111111&hide_border=true" alt="GitHub Activity Graph" style="width: 100%; min-width: 600px; opacity: 0.9;"> -->
             </div>
 
+            
+            <!-- Project: Master thesis -->
+            <div class="card">
+                <p class="meta">Gipplab | Dec 2026 - May 2027</p>
+                <h3 class="card-title">Master Thesis</h3>
+                <p class="description">Research Question: Do MRL, quantizability & other properties of embeddings transfer from teacher to student during distillation?</p>
+                <p class="description">Coming Soon!</p>
+                <!-- <div class="card-links">
+                    <a href="https://github.com/hamzasiddiqui10/vgd" target="_blank" class="btn">GitHub &nearr;</a>
+                </div>    -->
+            </div>
+
+
 
             <!-- Project: Video Generalization Dataset (VGD) -->
             <div class="card">
                 <p class="meta">Eckerlab | Aug 2026 - Present</p>
                 <h3 class="card-title">Video Generalization Dataset (VGD)</h3>
-                <p class="description">Research project investigating "object bias" in video action recognition. Exploring whether models truly understand temporal actions or simply cheat by recognizing static background objects. To evaluate this, I curated a custom multi-camera dataset with intentional visual distractors and built automated probing pipelines on HPC clusters to benchmark state-of-the-art foundation models (DINOv2, V-JEPA2, SAM3) and large Vision-Language Models.</p>
+                <p class="description">Research project investigating "object bias" in video action recognition. Exploring whether models truly understand temporal actions or simply cheat by recognizing static background objects. To evaluate this, I recorded and curated a custom multi-camera dataset with intentional visual distractors and built automated probing pipelines on HPC clusters to benchmark state-of-the-art foundation models (DINOv2, V-JEPA2, SAM3) and large Vision-Language Models.</p>
                 <div class="card-links">
                     <a href="https://github.com/hamzasiddiqui10/vgd" target="_blank" class="btn">GitHub &nearr;</a>
                 </div>   
             </div>
 
+            <!-- Project: ResumeReviewer-Agent -->
             <div class="card">
                 <p class="meta">Side Project | Oct 2026</p>
                 <h3 class="card-title">ResumeReviewer-Agent</h3>
@@ -169,6 +237,8 @@
                 </div>   
             </div>
 
+
+            <!-- Project: Domain Generalization in Video Action Recognition lab rotation -->
             <div class="card">
                 <p class="meta">Eckerlab | Apr - Jul 2026</p>
                 <h3 class="card-title">Enhancing Domain Generalization in Video Action Recognition</h3>
@@ -178,17 +248,18 @@
                 </div>   
             </div>
 
-            
+            <!-- Project: Berlin Airbnb Price Prediction -->
             <div class="card">
                 <p class="meta">Uni-Göttingen | Jul 2025</p>
                 <h3 class="card-title">Berlin Airbnb Price Prediction</h3>
-                <p class="description">ML model to predict Airbnb listing prices using features such as location, property type, amenities, and historical pricing data. Gradient-Boosted Tree (CatBoost) gave the best results.</p>
+                <p class="description">Trained and tuned neural network and tree-based regression models to predict Berlin Airbnb listing prices from location, property type, amenities and newly engineered spatial features like distance-to-city-center. CatBoost Regressor achieved a strongest held out test-set R-squared of 86%.
+</p>
                 <div class="card-links">
                     <a href="https://github.com/hamzasiddiqui10/airbnb_price_prediction_GBTree/tree/main" target="_blank" class="btn">GitHub &nearr;</a>
                 </div>
             </div>
 
-            <!-- cs50 hangman  -->
+            <!-- Project: cs50 hangman  -->
             <div class="card">
                 <p class="meta">CS50x - HarvardX | Aug 2022</p>
                 <h3 class="card-title">HANGMAN Game - Python Project</h3>
@@ -251,6 +322,57 @@
             </div>
         </section>
  -->
+
+
+
+
+
+
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-list">
+                <div class="skill-row">
+                    <div class="skill-category">Programming Languages</div>
+                    <div class="skill-items">Python · R · C · SQL · Matlab</div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-category">Databases</div>
+                    <div class="skill-items">MySQL · PostgreSQL · MongoDB · InfluxDB</div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-category">ML & Statistical Modeling</div>
+                    <div class="skill-items">PyTorch · Scikit-Learn · XGBoost · LightGBM · CatBoost · Pandas · NumPy · Bayesian Modeling (Stan) · Causal Inference · A/B Testing · Experimental Design · Feature Engineering · PCA · Matplotlib · Seaborn · Plotly</div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-category">GenAI & NLP</div>
+                    <div class="skill-items">LLMs · RAG · Information Retrieval · Embeddings & Knowledge Distillation · Hugging Face · LangChain · LangSmith · Pydantic · OpenAI & Gemini APIs · Structured Outputs · Prompt Engineering · LoRA · BERT · BART</div>
+                </div>
+ 
+                <div class="skill-row">
+                    <div class="skill-category">Computer Vision & Multimodal</div>
+                    <div class="skill-items">Vision-Language Models (VLMs) · Multimodal Learning · DINOv2 · V-JEPA 2 · SAM3 · ViTs · I3D · Optical Flow · PyAV · Decord · OpenCV</div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-category">MLOps, Data Engineering & Cloud</div>
+                    <div class="skill-items">Docker · Kubernetes · Apache Spark · Airflow · Kafka · FastAPI · CI/CD (GitHub Actions) · Linux · Slurm · Weights & Biases · HDF5 · Databricks · AWS (S3) · Azure (Functions · VMs · Blob)</div>
+                </div>
+
+                <div class="skill-row">
+                    <div class="skill-category">Languages</div>
+                    <div class="skill-items">English (Native-level) · German (A2)</div>
+                </div>
+            </div>
+        </section>
+        
+
+
 
         <!-- CONTACT SECTION -->
         <section id="contact">
