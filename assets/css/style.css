@@ -47,17 +47,17 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
     position: fixed;
     top: 0;
     left: 0;
-    padding: 5rem 5rem;
+    padding: 3rem 5rem;
     display: flex;
     flex-direction: column;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     border-radius: 12px;
     object-fit: cover;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.0rem;
 }
 
 .bio {
@@ -139,14 +139,23 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
 
 
 
+
 /* MAIN CONTENT */
 .content {
-    /* margin-left: var(--sidebar-width); */
-    margin-left: 280px;
-    padding: 5rem 10%;
-    max-width: 1100px;
-    width: 100%;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    padding: 5rem 1rem;
 }
+
+.content > section {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
 
 /* CARDS (Publications / Projects) */
 .card {
@@ -419,6 +428,7 @@ p { font-size: 0.95rem; margin-bottom: 1rem; }
     
     .content {
         margin-left: 0;
+        width: 100%;
         padding: 0 2rem 4rem 2rem;
     }
     
